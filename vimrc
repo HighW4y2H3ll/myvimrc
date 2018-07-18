@@ -75,7 +75,9 @@ Plug 'devjoe/vim-codequery'
 call plug#end()
 
 " clang-format options
-let g:clang_format#auto_format=1 " enable autoformatting on buffer write
+"let g:clang_format#auto_format=1 " enable autoformatting on buffer write
+"let g:clang_format#auto_format_on_insert_leave=1
 let g:clang_format#detect_style_file=1 " detect and load .clang-format file automatically
-let g:clang_format#auto_format_on_insert_leave=1
+map <buffer><Leader>x <Plug>(operator-clang-format)
+nmap <Leader>C :ClangFormatAutoToggle<CR>
 
