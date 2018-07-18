@@ -50,3 +50,7 @@ make && sudo make install
 popd
 rm -rf tmp_codequery
 
+# Other ctags/cscope tools
+sudo pip install pycscope   # Python
+sudo gem install starscope  # Javascript, Ruby, Go
+
