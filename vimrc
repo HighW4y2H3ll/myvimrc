@@ -64,3 +64,18 @@ set expandtab
 set foldmethod=marker
 set cindent
 set cino+=g0
+
+
+" Vim-Plug Configs - default under $HOME/.vim/plugged
+call plug#begin()
+Plug 'kana/vim-operator-user'
+" clang-format -style=google -dump-config > .clang-format
+Plug 'rhysd/vim-clang-format'
+Plug 'devjoe/vim-codequery'
+call plug#end()
+
+" clang-format options
+let g:clang_format#auto_format=1 " enable autoformatting on buffer write
+let g:clang_format#detect_style_file=1 " detect and load .clang-format file automatically
+let g:clang_format#auto_format_on_insert_leave=1
+

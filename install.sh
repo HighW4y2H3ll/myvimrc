@@ -4,5 +4,8 @@
 #mv /etc/vim/vimrc /etc/vim/vimrc_bak
 cp vimrc $HOME/.vimrc
 
-mkdir $HOME/.vim/autoload
+mkdir -p $HOME/.vim/autoload
 cp vim-plug/plug.vim $HOME/.vim/autoload
+
+# Config Vim-Plug
+mkdir -p $HOME/.vim/plugged
