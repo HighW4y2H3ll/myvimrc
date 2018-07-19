@@ -80,4 +80,5 @@ call plug#end()
 let g:clang_format#detect_style_file=1 " detect and load .clang-format file automatically
 map <buffer><Leader>x <Plug>(operator-clang-format)
 nmap <Leader>C :ClangFormatAutoToggle<CR>
+nmap <Leader>q :CodeQuery<CR>
 
