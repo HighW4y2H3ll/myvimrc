@@ -65,6 +65,9 @@ set foldmethod=marker
 set cindent
 set cino+=g0
 
+" This setting is based on xfce4-terminal with `green on black` color scheme
+colorscheme darkblue
+
 
 " Vim-Plug Configs - default under $HOME/.vim/plugged
 call plug#begin()
