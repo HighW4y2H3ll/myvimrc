@@ -1,0 +1,7 @@
+language: bash
+#install:
+#  - pip install -r requirements.txt
+#  - sudo bash ./scripts/setup-environment.sh --use-build-cache
+# command to run tests
+script:
+  - ./install.sh
