@@ -65,10 +65,13 @@ rm -rf tmp_codequery
 sudo pip install pycscope   # Python
 
 # install ruby-rvm
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+apt-get install software-properties-common
 sudo apt-add-repository -y ppa:rael-gc/rvm
 sudo apt-get update
 sudo apt-get install rvm
 rvm install ruby
+ruby -v
 sudo gem install starscope  # Javascript, Ruby, Go
 
 
