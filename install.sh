@@ -64,8 +64,11 @@ rm -rf tmp_codequery
 # Other ctags/cscope tools
 sudo pip install pycscope   # Python
 
-sudo apt-get install ruby-rvm
-rvm install ruby-2.3.3-p222
+# install ruby-rvm
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get install rvm
+rvm install ruby
 sudo gem install starscope  # Javascript, Ruby, Go
 
 
