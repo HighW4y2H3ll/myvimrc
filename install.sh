@@ -62,6 +62,10 @@ popd
 rm -rf tmp_codequery
 
 # Other ctags/cscope tools
-pip install pycscope   # Python
+sudo pip install pycscope   # Python
 gem install starscope  # Javascript, Ruby, Go
+if [ $? -ne 0 ]
+then
+    sudo gem install starscope
+fi
 
