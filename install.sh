@@ -25,6 +25,14 @@ cp vim-plug/plug.vim $HOME/.vim/autoload
 # Config Vim-Plug
 mkdir -p $HOME/.vim/plugged
 
+# Apply new color scheme
+mkdir tmp_colorscheme
+pushd ./tmp_colorscheme
+git clone https://github.com/flazz/vim-colorschemes.git
+mv vim-colorschemes/colors ~/.vim/
+popd
+rm -rf tmp_colorscheme
+
 # Build CodeQuery
 mkdir tmp_codequery
 pushd ./tmp_codequery
@@ -55,6 +63,6 @@ rm -rf tmp_codequery
 
 # Other ctags/cscope tools
 sudo pip install pycscope   # Python
-sudo apt-get install ruby
+sudo apt-get install ruby-full
 sudo gem install starscope  # Javascript, Ruby, Go
 
