@@ -33,6 +33,9 @@ cd codequery
 mkdir build
 cd build
 
+# Install clang-format
+sudo apt-get install clang-format
+
 if (($qt == 5)); then
     echo "Building with Qt5"
     sudo apt-get install g++ git cmake sqlite3 libsqlite3-dev qt5-default qttools5-dev-tools cscope exuberant-ctags
@@ -52,5 +55,6 @@ rm -rf tmp_codequery
 
 # Other ctags/cscope tools
 sudo pip install pycscope   # Python
+sudo apt-get install ruby
 sudo gem install starscope  # Javascript, Ruby, Go
 
