@@ -76,6 +76,7 @@ Plug 'kana/vim-operator-user'
 " clang-format -style=google -dump-config > .clang-format
 Plug 'rhysd/vim-clang-format'
 Plug 'devjoe/vim-codequery'
+Plug 'tpope/vim-obsession'
 call plug#end()
 
 " clang-format options
