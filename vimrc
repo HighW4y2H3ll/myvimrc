@@ -87,3 +87,6 @@ map <buffer><Leader>x <Plug>(operator-clang-format)
 nmap <Leader>C :ClangFormatAutoToggle<CR>
 nmap <Leader>q :CodeQuery<CR>
 
+" auto line change
+au BufRead,BufNewFile *.md setlocal textwidth=72
+au BufRead,BufNewFile *.tex setlocal textwidth=72
